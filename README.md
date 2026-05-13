@@ -13,7 +13,7 @@ Proteger, cuidar y sanar la planta de plagas, infecciones, enfermedades y proble
 *   **Feature A:** Damos una serie de recomendaciones de forma casera para curar,cuidar y proteger a la planta de infecciones.
 *   **Feature B:** Usamos como sabe la IA para identificar el problema ademas de proveer la humedad ambiente .
 ## Publicos objetivo
-*El publico objetivo son los agricultores, jardineros, aquellos dedicados a cultivar y sembrar huertas o campos.
+El publico objetivo son los agricultores, jardineros, aquellos dedicados a cultivar y sembrar huertas o campos.
 ## Tecnologías
 Lista de las herramientas principales utilizadas:
 *   **Lenguaje:** Python 3.10+ / Node.js 18.x
