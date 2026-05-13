@@ -18,7 +18,7 @@ Comandos GitHub
 
 **-git** **status** para ver si esta el cambio
 
-**-git** **commit** **-m <-- MENSAJE**
+**-git** **commit** **-m ""<-- MENSAJE""**
 
 \-(**git commit -am <-- ADD Y MENSAJE)**
 
