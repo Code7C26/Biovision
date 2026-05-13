@@ -5,7 +5,7 @@
 * Características
 * Tecnologías IA/Celulares
 * Instalacion 
-* Uso #Sacas una foto de la planta haciendo que la IA identifique el/los problemas de la planta para luego ofrecer una forma de cuidarla)
+* Uso #Sacas una foto de la planta haciendo que la IA identifique el/los problemas de la planta para luego ofrecer una forma de cuidarla
 * Contribución
 ## Necesidad a cubrir
 Proteger, cuidar y sanar la planta de plagas, infecciones, enfermedades y problemas de humedad.
