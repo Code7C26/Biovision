@@ -1,7 +1,7 @@
 # Biovision
 > Somos una empresa que busca el cuidado de tu campo y plantas, utilizando a la IA como medio de identificacion de/los problemas
 
-## Tabla de Contenidos
+## Tabla de Contenido
 * Características
 * Tecnologías IA/Celulares
 * Instalacion 
