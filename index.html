@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Granex - Tecnología e Información Agrícola</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Encabezado y Navegación -->
+    <header class="navbar">
+        <div class="logo">
+            <h1>🌾 GRANEX</h1>
+            <span class="sub-logo">by Biovision</span>
+        </div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#escaner">Escáner IA</a>
+            <a href="#funciones">Funciones</a>
+            <a href="#noticias">Diario Agrícola</a>
+            <a href="#preview">Pantallazo</a>
+            <a href="#contacto" class="btn-nav">Descargar</a>
+        </nav>
+    </header>
+
+    <!-- Sección Principal / Hero -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-badge">🍃 Tecnología para el Campo</span>
+            <h2>Apunta, Escanea y Diagnostica tus Cultivos</h2>
+            <p>Con nuestro escáner visual inteligente basado en IA estilo Google Lens, identifica plantas, enfermedades y plagas al instante solo usando la cámara de tu celular.</p>
+            <button id="downloadBtn" class="btn-primary">Probar Granex</button>
+        </div>
+    </section>
+
+    <!-- Sección Escáner Inteligente con IA -->
+    <section id="escaner" class="scanner-section">
+        <div class="scanner-container">
+            <div class="scanner-text">
+                <span class="badge">🌿 Visión Artificial Agrícola</span>
+                <h2>Escáner Inteligente estilo Google Lens</h2>
+                <p>Olvídate de buscar términos complejos en internet. Con el escáner de Granex solo debes enfocar con la cámara cualquier hoja, tallo o planta para obtener respuestas inmediatas.</p>
+                
+                <ul class="steps-list">
+                    <li>
+                        <span class="step-num">1</span>
+                        <div>
+                            <strong>Apunta con la cámara:</strong> Escanea cualquier cultivo, flor o maleza directamente en el campo.
+                        </div>
+                    </li>
+                    <li>
+                        <span class="step-num">2</span>
+                        <div>
+                            <strong>Análisis en tiempo real:</strong> La IA procesa la imagen para determinar la especie e identificar posibles hongos, plagas o deficiencias nutricionales.
+                        </div>
+                    </li>
+                    <li>
+                        <span class="step-num">3</span>
+                        <div>
+                            <strong>Información y cura casera:</strong> Recibe el diagnóstico detallado de la planta y recomendaciones ecológicas/caseras para tratarla.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="scanner-visual">
+                <div class="lens-box">
+                    <div class="camera-target">
+                        <div class="corner top-left"></div>
+                        <div class="corner top-right"></div>
+                        <div class="corner bottom-left"></div>
+                        <div class="corner bottom-right"></div>
+                        <div class="scan-line"></div>
+                        <span class="scan-label">🌱 Identificando especie / Diagnóstico...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Diario del Campo / Noticias del Día -->
+    <section id="noticias" class="news-section">
+        <div class="news-header">
+            <h2>📰 Diario del Campo: Noticias de Hoy</h2>
+            <span class="news-date" id="currentDate">Cargando fecha...</span>
+        </div>
+        <div class="news-grid">
+            
+            <article class="news-card">
+                <span class="tag tag-clima">⛅ Clima & Suelos</span>
+                <h3>Impacto del fenómeno "El Niño" en la campaña gruesa</h3>
+                <p>Las últimas previsiones meteorológicas indican precipitaciones claves para la franja central en las próximas semanas, favoreciendo la reserva de agua en suelo.</p>
+                <a href="https://www.infocampo.com.ar" target="_blank" rel="noopener noreferrer" class="read-more">Leer más en Infocampo →</a>
+            </article>
+
+            <article class="news-card">
+                <span class="tag tag-mercado">📈 Bolsa & Granos</span>
+                <h3>Estimación de siembra y cotizaciones del mercado</h3>
+                <p>Las exportaciones del sector muestran firmeza mientras los productores evalúan la rotación entre girasol, sorgo y maíz frente a la volatilidad de precios.</p>
+                <a href="https://www.lanacion.com.ar/campo/" target="_blank" rel="noopener noreferrer" class="read-more">Leer más en La Nación Campo →</a>
+            </article>
+
+            <article class="news-card">
+                <span class="tag tag-tech">🔬 Tecnología & IA</span>
+                <h3>Innovaciones tecnológicas para la detección de plagas</h3>
+                <p>Proyectos nacionales e internacionales incorporan modelos biológicos e inteligencia artificial para asegurar y optimizar los rendimientos del cultivo.</p>
+                <a href="https://www.clarin.com/rural/" target="_blank" rel="noopener noreferrer" class="read-more">Leer más en Clarín Rural →</a>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Características de la App -->
+    <section id="funciones" class="features">
+        <div class="features-container">
+            <h2>Ecosistema completo para el agricultor</h2>
+            <div class="cards-grid">
+                
+                <div class="card">
+                    <div class="icon">🔍</div>
+                    <h3>Escáner de Plantas</h3>
+                    <p>Reconocimiento visual inmediato de vegetación y problemas fitosanitarios mediante fotos.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">⛅</div>
+                    <h3>Pronóstico del Clima</h3>
+                    <p>Planifica tus labores agrícolas con alertas meteorológicas precisas y adaptadas al campo.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">📊</div>
+                    <h3>Bolsa de Valores</h3>
+                    <p>Consulta en tiempo real la evolución del mercado de granos e insumos para tomar mejores decisiones.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Previsualización de la App / Pantallazo -->
+    <section id="preview" class="app-preview">
+        <h2>Conoce la Interfaz de Granex</h2>
+        <p>Una herramienta diseñada para facilitar el trabajo diario del agricultor.</p>
+        <div class="mockup-container">
+            <div class="phone-frame">
+                <div class="screen-placeholder">
+                    <span>📱 Pantallazo / Vista previa de Granex</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2026 Granex. Un proyecto de <strong>Biovision</strong>.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
