@@ -1,0 +1,6 @@
+{
+  "name": "GRANEX",
+  "description": "Plataforma AgTech y Agricultura de Precisión en Argentina. Clima, Cotizaciones, Futuros ROFEX, Mercado de Rosario y Diagnóstico de Cultivos con IA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

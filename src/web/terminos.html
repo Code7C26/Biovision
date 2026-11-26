@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; style-src-attr 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; worker-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Términos de Servicio · GRANEX</title>
+  <meta name="theme-color" content="#047857">
+  <link rel="icon" type="image/png" href="assets/emblema.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tailwind.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body class="font-sans">
+  <!--
+    BORRADOR: revisar con un asesor legal antes de publicar.
+  -->
+  <header class="border-b border-agro-100 bg-white">
+    <nav class="mx-auto flex h-16 max-w-3xl items-center justify-between px-4 sm:px-6">
+      <a href="index.html" class="flex items-center gap-2.5">
+        <img src="assets/emblema.png" alt="" class="h-9 w-9 rounded-xl">
+        <span class="font-display text-lg font-extrabold tracking-wide text-agro-700">GRANEX</span>
+      </a>
+      <a href="index.html" class="text-sm font-medium text-agro-700 hover:underline">← Volver al inicio</a>
+    </nav>
+  </header>
+
+  <main class="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
+    <h1 class="font-display text-3xl font-extrabold tracking-tight sm:text-4xl">Términos de Servicio</h1>
+    <p class="mt-3 text-sm text-gris">Última actualización: 29 de octubre de 2026</p>
+
+    <div class="mt-10 space-y-10 leading-relaxed text-tinta/90 [&_h2]:font-display [&_h2]:text-xl [&_h2]:font-bold [&_h2]:text-tinta [&_li]:ml-5 [&_li]:list-disc [&_p]:mt-3 [&_ul]:mt-3 [&_ul]:space-y-2">
+      <section>
+        <h2>1. Aceptación</h2>
+        <p>Al instalar o usar GRANEX aceptás estos términos. Si no estás de acuerdo, no uses la app.</p>
+      </section>
+
+      <section>
+        <h2>2. Información de carácter orientativo</h2>
+        <p>GRANEX muestra pronósticos, índices satelitales, precios, noticias y cálculos de margen obtenidos de fuentes de terceros o de modelos. Esa información es orientativa:</p>
+        <ul>
+          <li>Puede tener demoras, interrupciones o errores de la fuente original.</li>
+          <li>Los índices satelitales y la humedad de suelo son estimaciones; cada valor indica su origen.</li>
+          <li>Los resultados de la calculadora dependen de los valores que cargues y no reemplazan el asesoramiento profesional, contable o impositivo.</li>
+        </ul>
+        <p>Las decisiones productivas, comerciales y financieras son responsabilidad de quien las toma.</p>
+      </section>
+
+      <section>
+        <h2>3. Prescripciones de dosis variable</h2>
+        <p>Los archivos exportados (Shapefile, ISO-XML, GeoJSON) deben revisarse en el monitor o controlador antes de usarse en el campo. La compatibilidad con cada equipo debe confirmarse con el fabricante.</p>
+      </section>
+
+      <section>
+        <h2>4. Datos satelitales y de relieve</h2>
+        <p>Las imágenes satelitales son de Sentinel-2 (programa Copernicus de la Unión Europea). El relieve de los lotes sale del Copernicus DEM; en la app y en los archivos exportados lleva el aviso que pide su licencia: «produced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved».</p>
+        <p>Las organizaciones a cargo del programa Copernicus, por ley o por delegación, no asumen ninguna responsabilidad por el uso del Copernicus WorldDEM-30.</p>
+      </section>
+
+      <section>
+        <h2>5. Cuentas de terceros</h2>
+        <p>GRANEX usa datos de servicios externos (por ejemplo A3 Mercados o Copernicus Data Space) según los términos de cada proveedor, que pueden limitar o cambiar su servicio. No necesitás una cuenta propia en esos servicios.</p>
+      </section>
+
+      <section>
+        <h2>6. Uso permitido</h2>
+        <p>No está permitido usar la app para fines ilícitos, intentar vulnerar su seguridad ni sobrecargar los servicios de terceros que consulta.</p>
+      </section>
+
+      <section>
+        <h2>7. Cambios</h2>
+        <p>Podemos actualizar la app y estos términos. Publicaremos la versión vigente en esta página con su fecha de actualización.</p>
+      </section>
+
+      <section>
+        <h2>8. Ley aplicable</h2>
+        <p>Estos términos se rigen por las leyes de la República Argentina.</p>
+      </section>
+
+      <section>
+        <h2>9. Contacto</h2>
+        <p>Por consultas escribinos a <a data-enlace="soporte" data-mostrar-email href="#" class="font-medium text-agro-700 underline">soporte</a>.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="border-t border-agro-100 bg-white">
+    <div class="mx-auto flex max-w-3xl flex-col gap-2 px-4 py-6 text-xs text-gris sm:flex-row sm:justify-between sm:px-6">
+      <p>© <span id="anio">2026</span> GRANEX</p>
+      <p><a href="privacidad.html" class="hover:text-agro-700">Política de Privacidad</a></p>
+    </div>
+  </footer>
+</body>
+</html>
