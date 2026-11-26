@@ -1,0 +1,29 @@
+/* Páginas legales de GRANEX web: sin scripts ni recursos externos (CSP propia en cada página). */
+:root {
+    --fondo: #F7F9F2; --superficie: #FFFFFF; --texto: #0F172A; --suave: #475569; --marca: #047857; --borde: #D1FAE5;
+}
+@media (prefers-color-scheme: dark) {
+    :root { --fondo: #061A14; --superficie: #0F2920; --texto: #F9FAFB; --suave: #9CA3AF; --marca: #34D399; --borde: #235846; }
+}
+* { box-sizing: border-box; }
+html { color-scheme: light dark; }
+body {
+    margin: 0; background: var(--fondo); color: var(--texto);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+header { border-bottom: 1px solid var(--borde); background: var(--superficie); }
+header .contenido { display: flex; align-items: center; gap: 12px; padding: 14px 16px; }
+header img { width: 36px; height: 36px; border-radius: 10px; }
+header strong { color: var(--marca); letter-spacing: .08em; }
+header a { margin-left: auto; color: var(--marca); font-weight: 600; text-decoration: none; }
+header a:hover, header a:focus-visible { text-decoration: underline; }
+.contenido { max-width: 760px; margin: 0 auto; }
+main { padding: 24px 16px 48px; }
+h1 { font-size: 1.8rem; line-height: 1.25; margin: 0 0 4px; }
+h2 { font-size: 1.15rem; margin: 28px 0 8px; color: var(--marca); }
+.fecha { color: var(--suave); margin: 0 0 20px; font-size: .95rem; }
+.resumen { background: var(--superficie); border: 1px solid var(--borde); border-radius: 14px; padding: 14px 18px; }
+ul { padding-left: 1.2rem; }
+li { margin: 4px 0; }
+a { color: var(--marca); }
+footer { color: var(--suave); font-size: .9rem; padding: 0 16px 32px; }

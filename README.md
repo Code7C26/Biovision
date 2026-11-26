@@ -1,60 +1,22 @@
-# GRANEX (Biovision)
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+</div>
 
-> Plataforma agrotecnológica integral diseñada para el productor agrícola, combinando inteligencia artificial (**Agro-AI**), análisis de mercado en tiempo real, monitoreo meteorológico satelital y finanzas del sector agropecuario.
+# Run and deploy your AI Studio app
 
----
+This contains everything you need to run your app locally.
 
-## Estado Técnico Actual
+View your app in AI Studio: https://ai.studio/apps/aca651c9-a0ba-41b8-abd3-46ce8fb3477c
 
-La aplicación móvil se encuentra en fase de desarrollo activo y funcional. Integra cinco módulos principales disponibles desde el menú inferior de navegación:
+## Run Locally
 
-1. **Finanzas & Futuros:** Monitoreo en tiempo real de divisas (Dólar Oficial, Blue, MEP, CCL, Tarjeta) mediante API integrada y cotizaciones del Mercado de Futuros Matba ROFEX (Soja, Maíz, Trigo).
-2. **Clima & Agrometeorología:** Búsqueda por localidad con integración de radar y mapa satelital interactivo de precipitaciones vía Windy, junto con variables agrometeorológicas.
-3. **Mercado de Granos:** Cotizaciones oficiales de granos (Soja, Maíz, Trigo), gráfico de evolución de precios (USD/Ton) e histórico de cotizaciones en la Bolsa de Comercio de Rosario.
-4. **Agro-AI (Diagnóstico con IA):** Asistente inteligente y visión por computadora para el procesamiento de imágenes, identificación fitosanitaria de plagas/enfermedades en cultivos y recomendaciones de cuidado.
-5. **Novedades del Sector:** Buscador por palabra clave/categoría y feed de noticias en tiempo real con fuentes agropecuarias destacadas (ej. Clarín Rural) e información climática.
+**Prerequisites:**  [Android Studio](https://developer.android.com/studio)
 
----
 
-## Necesidad a cubrir
-
-Proveer al productor y trabajador agrícola una herramienta centralizada que resuelva tanto el cuidado de sus cultivos (detección de plagas y monitoreo ambiental) como la toma de decisiones financieras e informativas (precios de granos, cotización de divisas, clima local y noticias del sector) para optimizar el tiempo y maximizar la eficiencia en el campo.
-
----
-
-## Características Principales
-
-* **Agro-AI (Diagnóstico Fitosanitario):** Captura y análisis de fotos de plantas mediante IA para diagnosticar problemas y sugerir tratamientos.
-* **Mapa Satelital y Clima:** Visualización de radar de lluvias/truenos por localidad integrando la API de Windy.
-* **Panel Financiero & Mercados:**
-  * Seguimiento de tipos de cambio oficiales y paralelos en Argentina.
-  * Cotizaciones en tiempo real del mercado de futuros Matba ROFEX.
-  * Evolución e histórico de precios en pizarra (USD/Ton y ARS/Ton) con simulador integrado.
-* **Noticias & Novedades:** Buscador interactivo de artículos y noticias del ámbito agropecuario.
-
----
-
-## Público Objetivo
-
-Agricultores, productores agropecuarios, ingenieros agrónomos, jardineros y profesionales del sector agroindustrial dedicados a la gestión de campos, cultivos y huertas.
-
----
-
-## Tecnologías Utilizadas
-
-* **Lenguaje / Entorno:** JavaScript / Node.js / Python 3.10+
-* **APIs Integradas:**
-  * API de Clima y Radar Satelital (Windy).
-  * API de Finanzas y Divisas en Tiempo Real.
-  * API de Cotizaciones de Granos (granos.ar / Rosario / Matba ROFEX).
-  * API de Noticias e Inteligencia Artificial (Visión por computadora / IA generativa).
-
----
-
-## Instrucciones de Instalación y Uso
-
-### Instalación
-1. Clonar el repositorio localmente:
-   ```bash
-   git clone <URL_DE_TU_REPOSITORIO>
-
+1. Open Android Studio
+2. Select **Open** and choose the directory containing this project
+3. Allow Android Studio to fix any incompatibilities as it imports the project.
+4. Create a file named `.env` in the project directory and set `GEMINI_API_KEY` in that file to your Gemini API key (see `.env.example` for an example)
+5. Remove this line from the app's `build.gradle.kts` file: `signingConfig = signingConfigs.getByName("debugConfig")`
+6. Run the app on an emulator or physical device
+7. If you have already published your app in AI Studio, please [request upload key reset](https://support.google.com/googleplay/android-developer/answer/9842756#zippy=%2Crequest-an-upload-key-reset) in Google Play Console.

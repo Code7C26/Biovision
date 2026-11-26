@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Solo HTTPS. Las URLs http:// de noticias e imágenes se convierten a https://
+    en NewsArticle.cleanUrl. Si una fuente concreta no soporta HTTPS, agregar
+    un <domain-config cleartextTrafficPermitted="true"> solo para ese dominio.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

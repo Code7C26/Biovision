@@ -1,0 +1,109 @@
+/* Complementos a Tailwind: lo que no conviene expresar con clases utilitarias. */
+
+html { scroll-behavior: smooth; scroll-padding-top: 5.5rem; }
+body { background: #FFFFFF; color: #0F172A; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; font-feature-settings: 'cv11', 'ss01'; }
+::selection { background: #A7F3D0; color: #064E3B; }
+.tnum { font-variant-numeric: tabular-nums; }
+
+/* ---------- Fondos ---------- */
+
+/* Rejilla fina, estilo plano técnico, que se desvanece hacia abajo. */
+.rejilla {
+  background-image:
+    linear-gradient(rgba(6,78,59,.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(6,78,59,.06) 1px, transparent 1px);
+  background-size: 56px 56px;
+  -webkit-mask-image: linear-gradient(180deg, #000 0%, transparent 85%);
+          mask-image: linear-gradient(180deg, #000 0%, transparent 85%);
+}
+.rejilla-oscura {
+  background-image:
+    linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+/* ---------- Dispositivos ---------- */
+
+.telefono {
+  position: relative;
+  border-radius: 2.4rem;
+  padding: .55rem;
+  background: linear-gradient(150deg, #2b3442 0%, #0b1220 50%, #1f2937 100%);
+  box-shadow:
+    inset 0 0 0 1.5px rgba(255,255,255,.08),
+    0 40px 70px -30px rgba(2,44,34,.55),
+    0 12px 28px -14px rgba(15,23,42,.4);
+}
+.telefono::before { /* cámara */
+  content: '';
+  position: absolute;
+  top: .95rem; left: 50%;
+  width: .5rem; height: .5rem;
+  transform: translateX(-50%);
+  border-radius: 999px;
+  background: #0b1220;
+  box-shadow: inset 0 0 0 2px #2b3442;
+  z-index: 3;
+}
+.telefono > .pantalla {
+  position: relative;
+  border-radius: 1.9rem;
+  overflow: hidden;
+  background: #F7F9F2;
+}
+
+.ventana {
+  border-radius: .75rem;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid rgba(15,23,42,.10);
+  box-shadow: 0 1px 2px rgba(15,23,42,.06), 0 40px 80px -40px rgba(2,44,34,.45);
+}
+
+/* ---------- Animaciones (sobrias) ---------- */
+
+[data-revelar] {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1);
+  transition-delay: var(--retraso, 0ms);
+}
+[data-revelar].visible { opacity: 1; transform: none; }
+
+@keyframes trazar { from { stroke-dashoffset: var(--largo, 600); } to { stroke-dashoffset: 0; } }
+.trazo { stroke-dasharray: var(--largo, 600); stroke-dashoffset: var(--largo, 600); }
+.visible .trazo { animation: trazar 1.8s cubic-bezier(.3,.7,.2,1) .2s forwards; }
+
+/* ---------- Componentes ---------- */
+
+.tarjeta {
+  background: #fff;
+  border: 1px solid #E2E8F0;
+  border-radius: .75rem;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+.tarjeta:hover {
+  border-color: #A7F3D0;
+  box-shadow: 0 18px 40px -24px rgba(6,78,59,.35);
+}
+
+#encabezado { transition: box-shadow .3s ease, background-color .3s ease; }
+#encabezado.desplazado { background: rgba(255,255,255,.96); box-shadow: 0 1px 0 #E2E8F0, 0 8px 24px -16px rgba(15,23,42,.25); }
+
+/* Preguntas frecuentes. */
+.pregunta summary { list-style: none; cursor: pointer; }
+.pregunta summary::-webkit-details-marker { display: none; }
+.pregunta .icono-mas { transition: transform .3s ease; }
+.pregunta[open] .icono-mas { transform: rotate(45deg); }
+
+/* Carrusel de capturas en pantallas chicas. */
+.carrusel { scroll-snap-type: x mandatory; scrollbar-width: none; }
+.carrusel::-webkit-scrollbar { display: none; }
+.carrusel > * { scroll-snap-align: center; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  [data-revelar] { opacity: 1; transform: none; transition: none; }
+  .trazo, .visible .trazo { animation: none; stroke-dashoffset: 0; }
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Solo scripts propios (Leaflet incluido en la app) e imágenes de los servidores de teselas permitidos -->
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data: https://api.maptiler.com https://server.arcgisonline.com https://tile.openstreetmap.org">
+    <link rel="stylesheet" href="leaflet.css">
+    <link rel="stylesheet" href="mapa_gis.css">
+</head>
+<body>
+    <div id="map"></div>
+    <script src="leaflet.js"></script>
+    <script src="mapa_gis.js"></script>
+</body>
+</html>
