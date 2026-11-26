@@ -1,3 +1,0 @@
-# GRANEX web: se puede indexar la portada; las páginas legales también son públicas.
-User-agent: *
-Allow: /
